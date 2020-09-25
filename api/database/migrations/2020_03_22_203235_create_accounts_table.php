@@ -17,6 +17,8 @@ class CreateAccountsTable extends Migration
             $table->id();
             $table->text('name');
             $table->float('balance');
+            $table->string('currency')->default('eur');
+            $table->timestamps();
         });
     }
 

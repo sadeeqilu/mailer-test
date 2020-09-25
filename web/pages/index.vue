@@ -33,7 +33,19 @@ export default Vue.extend({
       accountID: 1
     };
   },
-  components: {}
+  components: {},
+  head(){
+    return{
+      title : "ybank",
+      meta : [
+        {
+          hid : "description",
+          name : "description",
+          content : "MailerLite assignment test"
+        }
+      ]
+    }
+  }
 });
 </script>
 
